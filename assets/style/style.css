@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+
+header{
+    width: 100%;   
+}
+
+header > div {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+.logo > img{
+    width: 110px !important;
+}
+
+.nav-container{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-container > li > a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.nav-container > li > a > hr{
+    width: 90%;
+    margin: 4px auto 0px auto;
+    height:3px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.language-button > a{
+    display: flex;
+    color: white;
+    gap: 6px;
+    align-items: center;
+    /* text-transform: uppercase; */
+    font-size: 12px;
+    
+}
+.language-button > a > svg {
+
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.section-1{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section-1-top{
+    display: flex;    
+    gap: 14px;
+    width: 100%;
+}
+
+
+.left-content{
+    flex: 0 0 40%;
+}
+
+.left-content-heading{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.left-content-about {
+    margin: 20px 0px;
+}
+
+.left-content-about > div > h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.left-content-desc{    
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-content-desc > svg {
+    fill: white;
+    width: 100px;
+    height: 100px;
+}
+.center-content{
+    flex: 0 0 30%;
+    max-width: 30%;
+    background-color: blue;
+    overflow: hidden; /* prevents image from coming outside */
+}
+
+.center-content img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-content{
+    flex: 30%;
+}
