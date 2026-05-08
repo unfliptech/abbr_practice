@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(95, 26, 11);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid-container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 160px 160px 160px;
+            gap: 10px;
+            grid-template-rows: 170px 50px 120px;
+            align-content: center;
+            justify-content: center;
+            grid-template-areas:
+                "box-1 box-1 box-2"
+                "box-3 box-4 box-2"
+                "box-3 box-4 box-5";
+
+        }
+
+        .grid-container div {
+            border-radius: 10px;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .box-1 {
+            padding: 10px;
+            grid-area: box-1;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box-1 div h1 {
+            font-family: "Lilita One", sans-serif;
+        }
+
+        .box-2 {
+            grid-area: box-2;
+            background-image: url(coffeecup.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            font-size: 6px;
+            padding: 10px;
+        }
+
+        .box-2 :first-child {
+            font-size: 12px;
+          
+            font-family: "Lilita One", sans-serif;
+        }
+
+        .box-3 {
+            grid-area: box-3;
+        }
+
+        .box-4 {
+            grid-area: box-4;
+        }
+
+        .box-5 {
+            grid-area: box-5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box-1">
+            <div>
+                <h1>Strike Fast, <br>Sip Slow</h1>
+            </div>
+            <div class="flex">
+                <div>
+                    <img src="logo.png" width="50%" alt="">
+                </div>
+                <div>
+                    <p style="font-size: 12px;">
+                        BrewBolt is a haven for those who chase the storm but relish the calm.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box-2">
+
+
+            <p>
+                brewbolt.co
+            </p>
+            <p>
+                Quick jolt of energy you need and the slow moment of enjoyment you deserve
+            </p>
+
+        </div>
+        <div class="box-3">Child 3</div>
+        <div class="box-4">Child 4</div>
+        <div class="box-5">
+            <iframe src="https://www.youtube.com/embed/AsTvhK6HTdI" frameborder="0"></iframe>
+        </div>
+        <!-- <div class="box-6">Child 6</div>
+        <div class="box-7">Child 7</div>
+        <div class="box-8">Child 8</div> -->
+    </div>
+</body>
+
+</html>
