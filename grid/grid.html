@@ -1,136 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
 
-        body {
-            background-color: rgb(95, 26, 11);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .grid-container {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 160px 160px 160px;
-            gap: 10px;
-            grid-template-rows: 170px 50px 120px;
-            align-content: center;
-            justify-content: center;
-            grid-template-areas:
-                "box-1 box-1 box-2"
-                "box-3 box-4 box-2"
-                "box-3 box-4 box-5";
-
-        }
-
-        .grid-container div {
-            border-radius: 10px;
-        }
-
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .box-1 {
-            padding: 10px;
-            grid-area: box-1;
-            background-color: yellow;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .box-1 div h1 {
-            font-family: "Lilita One", sans-serif;
-        }
-
-        .box-2 {
-            grid-area: box-2;
-            background-image: url(coffeecup.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: yellow;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            font-size: 6px;
-            padding: 10px;
-        }
-
-        .box-2 :first-child {
-            font-size: 12px;
-          
-            font-family: "Lilita One", sans-serif;
-        }
-
-        .box-3 {
-            grid-area: box-3;
-        }
-
-        .box-4 {
-            grid-area: box-4;
-        }
-
-        .box-5 {
-            grid-area: box-5;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>
+        Hear and Say | Expert Audiologists & Speech Pathologists
+    </title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="box-1">
-            <div>
-                <h1>Strike Fast, <br>Sip Slow</h1>
-            </div>
-            <div class="flex">
+    <header></header>
+    <main>
+        <section class="services-card">
+            <div class="services-card-title">
                 <div>
-                    <img src="logo.png" width="50%" alt="">
-                </div>
-                <div>
-                    <p style="font-size: 12px;">
-                        BrewBolt is a haven for those who chase the storm but relish the calm.
+                    <h1>Our Services</h1>
+                    <p>
+                        We offer a range of specialised services to support hearing and communication for babies,
+                        children, and adults. Whether you or your child needs detailed hearing assessments, speech
+                        therapy, or early screening, our team is here to guide you every step of the way.
                     </p>
                 </div>
+                <div>
+                    <a class="primary-button" href="#">View All Services</a>
+                </div>
             </div>
-        </div>
-        <div class="box-2">
+            <div class="service-card-container">
+                <div class="service-cards">
 
+                    <img src="https://picsum.photos/300/200" alt="Image title goes here">
 
-            <p>
-                brewbolt.co
-            </p>
-            <p>
-                Quick jolt of energy you need and the slow moment of enjoyment you deserve
-            </p>
+                    <div class="card-title">
+                        <div>
+                            <h2>Hearing Assessments</h2>
+                            <p>
+                                Comprehensive hearing evaluations for all ages, using state-of-the-art technology to
+                                identify hearing loss and guide treatment options.
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-cards">
 
-        </div>
-        <div class="box-3">Child 3</div>
-        <div class="box-4">Child 4</div>
-        <div class="box-5">
-            <iframe src="https://www.youtube.com/embed/AsTvhK6HTdI" frameborder="0"></iframe>
-        </div>
-        <!-- <div class="box-6">Child 6</div>
-        <div class="box-7">Child 7</div>
-        <div class="box-8">Child 8</div> -->
-    </div>
+                    <img src="https://picsum.photos/300/200" alt="Image title goes here">
+
+                    <div class="card-title">
+                        <div>
+                            <h2>Hearing Aid Fitting</h2>
+                            <p>
+                                Personalise aids to ensure optimal performance and comfort.
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-cards">
+
+                    <img src="https://picsum.photos/300/200" alt="Image title goes here">
+
+                    <div class="card-title">
+                        <div>
+                            <h2>Hearing Assessments</h2>
+                            <p>
+                                Comprehensive hearing evaluations for all ages, using state-of-the-art technology to
+                                identify
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-cards">
+
+                    <img src="https://picsum.photos/300/200" alt="Image title goes here">
+
+                    <div class="card-title">
+                        <div>
+                            <h2>Hearing Assessments</h2>
+                            <p>
+                                Comprehensive hearing evaluations for all ages, .
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Our Grid Layout</h2>
+                <p>
+                    This is an example of a grid layout. The boxes below are arranged in a grid format, allowing for
+                    a clean and organized presentation of content. Each box can contain different types of information,
+                    such as text, images, or links, making it a versatile layout for various purposes.
+                </p>
+            </div>
+            <div class="grid-container">
+                <div class="grid-box box-1">Box 1</div>
+                <div class="grid-box box-2">Box 2</div>
+                <div class="grid-box box-3">Box 3</div>
+                <div class="grid-box box-4">Box 4</div>
+                <div class="grid-box box-5">Box 5</div>
+                <div class="grid-box box-6">Box 6</div>
+                <div class="grid-box box-7">Box 7</div>
+                <div class="grid-box box-8">Box 8</div>
+            </div>
+
+        </section>
+    </main>
 </body>
 
 </html>
